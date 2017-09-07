@@ -39,4 +39,5 @@ top10 = sortedList[:numWords]
 pprint(top10)                                                                
 file.close();
 
-tail("-f", "/dev/null")
+# HACK to keep the script (and thus the container) from exiting
+# tail("-f", "/dev/null")
